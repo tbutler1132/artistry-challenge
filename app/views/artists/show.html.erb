@@ -1,0 +1,9 @@
+
+<%= @artist.name %><br>
+<%= @artist.age %><br>
+<%= @artist.title %><br>
+<% @artist.instruments.each do |i| %><br>
+        <%= i.name %>
+<% end %>
+<br>
+<%= link_to "Index Page", artists_path %>
